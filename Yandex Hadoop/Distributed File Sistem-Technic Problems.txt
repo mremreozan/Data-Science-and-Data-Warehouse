@@ -17,9 +17,10 @@
 tread / tseek = 200
 tread = 200 * tseek
 tseek = 5ms = 0.005s
+tread = 1s
 vread = 60MB/s
 tread = size / vread
-size = vread * tread = vread * 200 * tseek = 60MB/s * 200 * 0.005s = 60MB
+size = vread * tread = 60 * 1 = 60MB
 
 
 
