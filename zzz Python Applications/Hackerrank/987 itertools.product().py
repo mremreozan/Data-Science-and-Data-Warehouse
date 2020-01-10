@@ -8,9 +8,11 @@ Created on Sat Jan 11 00:16:01 2020
 from itertools import product
 
 if __name__ == '__main__':
-    n = [int(i) for i in input().split()]
-    m = [int(i) for i in input().split()]
+    n = [int(i) for i in input().split()]   # first style for list
+    m = list(map(int,input().split()))      # second style for list
+
     print(*product(n, m))         # direct results
+
     print(list(product(n, m)))    # as a list
 
 
