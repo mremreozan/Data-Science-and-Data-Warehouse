@@ -1,0 +1,36 @@
+ls -l    ->  to use a long listing format
+ls -lh   ->  add size to details 
+ls -lSh  ->  to be sorted by size
+pwd      ->  prints the wholw pathname of the current directory
+du       ->  estimates and displays the disk space used by files
+du -h    ->  to print file sizes in human readable format
+df -h    ->  to report the amount of available disk space bein used in human format
+mkdir    ->  to create directories
+cp -r    ->  to make a copy of the directory not only a file
+mv       ->  to move and rename files    
+rm       ->  to remove files
+rm -r    ->  to remove directories
+touch    ->  to change file timestamp, to create an empty file   /  $ touch new_file.txt
+
+head     ->  to prints the first part of files or we determine as head -4 -> prints first 4 lines / default=10
+tail     ->  to print the last part of files
+more     ->  as different from cat, print whole file in one screen
+wc       ->  gives us count of lines, words, character
+grep     ->  grep 'data' temporary_logs.txt   ->   print all the lines from file “temporary_logs.txt”, that contains ‘data’ substring
+tr       ->  cat file.txt | tr "A" "B"   ->  replace A with B in the file.txt
+sort     ->  sort file.txt -r  -> sorting lines of file.txt in the reverse order
+cut -d ' ' -f5 input.txt > output.txt    -> How to take the first 5 columns of a file and write them into another file?
+emre is coming > output.txt  -> write into output.txt
+
+NETWORK
+free     ->  displays the total amounts of free and used memory
+top 	 ->  provides a dynamic real-time view of a running system
+ps       ->  provides snapshot of the status of currently  / $ ps au
+kill     ->  to end the process / kill -9 [pidNumber]
+
+
+HADOOP
+hdfs fs -put <source> <destination>  -> to move files
+hdfs fs -setrep -w 2 file.txt   -> to replicate 2 file.txt
+hdfs fsck /data/wiki -files -blocks -locations   ->  to prvide you with the information about file blocks and the allocation
+hdfs fsck -blockId blk_1073808569   -> to get information about file from block id
