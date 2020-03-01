@@ -1,0 +1,6 @@
+cd ~/training-data-analyst/courses/data_analysis/lab2
+
+export PATH=/usr/lib/jvm/java-8-openjdk-amd64/bin/:$PATH
+cd ~/training-data-analyst/courses/data_analysis/lab2/javahelp
+mvn compile -e exec:java \
+ -Dexec.mainClass=com.google.cloud.training.dataanalyst.javahelp.Grep
