@@ -1,0 +1,6 @@
+gcloud auth list
+gcloud config set project "<yourProjectID>"
+git clone https://github.com/GoogleCloudPlatform/training-data-analyst
+gsutil mb gs://<NameOfBucket>
+
+
