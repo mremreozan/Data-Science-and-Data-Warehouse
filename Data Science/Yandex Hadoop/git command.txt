@@ -1,0 +1,109 @@
+git status             ->  To check the status of your repository.
+
+git diff (filename)    ->  Show you all the changes about that filename in your repository.
+
+git add (filename)     ->  Add one or more files to the staging area.
+			   git add .  ->  add all of changes
+
+git commit -m "note"   ->  to let you write this message after you make changes in the repository.
+
+git log                ->  Git automatically uses a pager to show one screen of output at a time. 
+			   Displays the overall history of a project or file
+		           Press the space bar to go down a page or the 'q' key to quit.
+			   You can use specifically "git log (filename)"
+
+git show 0da2f7        ->  To view the details of a specific commit, with the first few characters of the commit's hash.
+
+git show HEAD	       ->  The special label HEAD always refers to the most recent commit.
+			   HEAD~1 is previous of the most recent commit.
+			   HEAD~2 is previous of the HEAD~1. 
+
+git annotate (filename)->  Shows who made the last change to each line of a file and when.
+			   The first eight digits of the hash, The author, The time of the commit,
+			   The line number, The contents of the line.
+
+git diff ID1..ID2      ->  To see the changes between two commits.
+			   For example: git diff abc123..def456
+
+
+git clean -n 	       ->  show you a list of files that are in the repository, but whose history Git is not currently tracking. 
+git clean -f (filename)->  delete untracking files.
+
+git config --list      ->  To see what the settings are.
+			   git config --list --system
+			   git config --list --global
+			   git config --list --local
+
+git config --global user.email rep.loop@datacamp.com
+		       ->  Change the email address (user.email) configured for the current user 
+			   for all projects to rep.loop@datacamp.com.
+
+git reset HEAD         ->  you can unstage the additions or to cancel adding
+			   git reset (filename)
+			   git reset  ->  to remove all files from the staging area.
+
+git commit --amend -m "new message" 
+		       ->  Commit those changes with the message "new message"
+
+git checkout -- (filename) 
+                       ->  discard the changes that have not yet been staged, without adding.
+			   git checkout (few characters of the commit) (filename)
+			   git checkout -- .  ->  all of the files in or below this directory 
+
+git checkout (branch-name)
+		       ->  switch branch to (branch-name).  
+
+git checkout -b (branch-name)
+                       ->  To create a branch then switch to it in one step.
+			   git branch (branch-name)   ->  to only create a branch.
+
+git log -3 (filename)  ->  shows you the last three commits involving (filename).
+
+git branch             ->  To list all of the branches in a repository.
+
+git diff branch-1..branch-2
+                       ->  shows the difference between two branches.
+
+git rm (filename)      ->  removes the file
+
+git merge branch1 branch2 
+                       ->  To merge two branches, branch1 must be source, branch2 must be destination.
+
+git init (repositoryname)
+                       ->  to create a repository for a new project in the current working directory.
+
+git init /path/to/project
+                       ->  to turn an existing project into a Git repository.
+
+git clone (URL) (newRepositoryName)
+		       ->  to create a copy of an existing repository in the current working directory.
+                           URL identifies the repository you want to clone.
+			   For example; URL may be "https://github.com/datacamp/project.git" (remote)
+                                        URL may be "/existing/project"  (local)
+
+git remote add (remote-name) (URL)
+                       ->  to add more remotes.
+                           git remote rm remote-name  ->  to remove it.
+
+git pull thunk latest-analysis
+                       ->  to pull in changes from a remote repository.
+                           For example, if you are in the quarterly-report branch of your local repository,
+                                        It changes from latest-analysis branch in the repository associated 
+					with the remote called thunk and merge them into your quarterly-report branch.
+
+git push (remote-name) (branch-name)
+                       ->  
+
+
+NOTES:
+ 
+- You should have committed all your local changes if you want your git pull to run smoothly.
+
+- Git stops you from switching branches when you have unsaved work.
+
+- Git stops you from pulling in changes from a remote repository when doing so might overwrite things you have done locally. 
+  The fix is simple: either commit your local changes or revert them, and then try to pull again.
+
+- Git does not allow you to push changes to a remote repository unless you have merged the contents of the remote repository 
+  into your own work.
+
