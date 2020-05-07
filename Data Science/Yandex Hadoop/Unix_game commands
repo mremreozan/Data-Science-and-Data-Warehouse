@@ -1,0 +1,4 @@
+unix_evoltion / question5:
+
+    cat input.txt | tr '[A-Z]' '[a-z]' | tr -c '[a-z]' ' ' | fmt -w1 | awk 'length == 8' | 
+                    sort | uniq -c | sort -nr | cut -d ' ' -f 7 | sed 1d | head -n 3
