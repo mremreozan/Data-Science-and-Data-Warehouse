@@ -1,0 +1,8 @@
+# shell-within-a shell      ---  it used backstick. ` is caled backtick.
+echo "Right now it is `date`"
+
+
+-------------
+ouput: Right now it is Sat May 30 08:41:09 UTC 2020
+-------------
+echo "Right now it is $(date)"    ---->    give same result

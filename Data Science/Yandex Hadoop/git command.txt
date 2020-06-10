@@ -94,6 +94,11 @@ git pull thunk latest-analysis
 git push (remote-name) (branch-name)
                        ->  
 
+git rm --cached (filename)
+		       ->  remove a file from a git repository without deketing it from the local filesystem.
+			   if it is a directory -> git rm --cached -r (dirname)
+
+
 
 NOTES:
  

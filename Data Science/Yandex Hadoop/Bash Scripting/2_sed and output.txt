@@ -1,0 +1,7 @@
+#!/usr.bash
+
+# Create a sed pipe to a new file
+# Several teams have changed their names so you need to do some replacements.
+cat soccer_scores.csv | sed 's/Cherno/Cherno City/g' | sed 's/Arda/Arda United/g' > soccer_scores_edited.csv
+
+# Now save and run!

@@ -1,0 +1,3 @@
+#!/usr/bash                           ---  first line               #! -> hash-bang
+./(filename.sh) or bash (filename.sh) ---  to run          
+which bash			      ---  show which this environment bash is located
