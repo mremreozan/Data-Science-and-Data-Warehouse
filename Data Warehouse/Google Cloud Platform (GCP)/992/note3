@@ -1,0 +1,50 @@
+1-
+bigquery So we are selecting the departure 
+delay, the number of flights at that 
+departure delay, and then the deciles of 
+the arrival delay. Our question may be 
+that What is the median arrival delay for 
+flights left 35 minutes early? And we're 
+splitting it into the zeroth percentile, 
+tenth percentile, all the way up to the 
+100 percentile. We're getting this from 
+a public dataset of flights. we get a 
+result within seconds. So if we look at 
+these data in a summary, we see the departure 
+delay, negative 37. We get 107 flights that 
+left 37 minutes early. And these are the 
+approximate deciles of when those flights 
+arrived. So in the zero decile, negative 66. 
+The tenth, negative 44. So that actually 
+arrived 44 minutes early.
+gecis-
+now we can actually do some analysis on 
+those aggregates in our AI platform notebooks.
+2-
+a-
+I need to add my query and to import the 
+Google Cloud platform Python library to work 
+within BigQuery seamlessly.
+b-
+I have to put my wuery results into a Panda's 
+data frame df.head, that's going to give me 
+the first five rows of what's in that data 
+frame. And so, each of these rows is a delayed 
+departure by minute. So negative 37, negative 
+36, negative 35, all the way down. Number of 
+flights, and then those deciles within those 
+flights.
+c-
+and then, within each column is going to be the 
+decile zero to 100% of delay for arrival for 
+that flight.
+d-
+and I want to plot this in the notebook. And I'm 
+only going to look at departure delays from 
+between 30 minutes early and 15 minutes late. 
+As flights are delayed, they tend to be, if 
+they're more late, they're going to arrive late 
+But you probably expected this sense. What I 
+really want to highlight in this lab is this 
+pattern of doing some kind of large scale data 
+analysis over 70 million rows in BigQuery.
