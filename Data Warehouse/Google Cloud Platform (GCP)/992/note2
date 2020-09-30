@@ -4,9 +4,254 @@ in terms of Data Scientist or Data Engineer.
 2-
 Instead of buying, owning and maintaining 
 physical data centers and servers, you can 
-access technology services such as computing power, 
-storage, and databases from cloud provider. If you 
-are a member of a cloud platform, you don’t need to 
-have special hardware or software program on your 
-computer to write code, you have to be accessing internet. 
-Cloud computer have already everything you need.
+access technology services such as computing
+power, storage, and databases from cloud 
+provider. If you are a member of a cloud 
+platform, you don’t need to have special 
+hardware or software program on your 
+computer to write code, you have to be 
+accessing internet. Cloud computer have 
+already everything you need.
+3- 
+Hundreds of billions dollars is allocated 
+to the clouds by companies and those numbers 
+are only expected to increase on the 
+coming years.
+4- 
+The most common Cloud Platforms are AWS 
+(Amazon Web Services), Microsoft Azure, 
+Google Cloud Platform. Software development 
+and testing, big data analytics, web 
+application.  What can you do with Cloud 
+Computing. You can build nearly anything 
+you can imagine from infrastructure sevices 
+such as compute, storage and databases to 
+machine learning, data analytics much more.
+5-
+These company have a lot of data centers 
+and servers all around the world. They 
+have similar services and Today, I will 
+tell you Google Cloud Platform.
+6-
+There are three fundamental aspects of 
+Google's core infrastructure and a top 
+layer of products and services that we 
+will interact with most often. The base 
+layer that covers all of  Google's applications 
+and therefore  Google Cloud's too, is security. 
+On top of that, are compute, storage, and 
+networking. These allow you to process, store, 
+and deliver business changing insights, data 
+pipelines, and machine learning models. Finally, 
+while running your big data applications 
+on bare metal virtual machines as possible, 
+Google has developed a top layer of big data 
+and ML products to abstract away a lot of the 
+hard work of managing and scaling that 
+infrastructure for you.
+7- 
+First, you get computing resources on-demand 
+and self-service. All you have to do is use a 
+simple interface and you get the processing 
+power, storage, and network you need, with no 
+need for human intervention. Second, you access 
+these resources over the net from anywhere 
+you want. Third, the provider of those resources 
+has a big pool of them and allocates them to 
+customers out of that pool. That allows the 
+provider to get economies of scale by buying in 
+bulk and pass the savings on to the customers. 
+Customers don't have to know or care about the 
+exact physical location of those resources. 
+Fourth, the resources are elastic. If you need 
+more resources you can get more, rapidly. 
+If you need less, you can scale back. 
+And last, the customers pay only for what 
+they use or reserve as they go. If they stop 
+using resources, they stop paying. That's it. 
+That's the definition of cloud.
+8-
+This screen is dashboard of the GCP.
+9-
+The suite of big data products on Google 
+Cloud Platform 
+10-
+Storages are explained in the table according 
+to their intended use.
+11-
+you'll be trying to search for data based on 
+a single key, use Datastore if you'd be finding 
+data using SQL use Cloud SQL. if you wanted 
+transactional database that is horizontally 
+scalable so that you can deal with data larger 
+than a few gigabytes, or if you need multiple 
+databases so you want them spread globally use 
+Cloud Spanner. If you'll need multiple databases, 
+either because you have a lot of data or because 
+your application needs to be transactional across 
+different continents, use Cloud Spanner.
+Use Bigtable if you need real-time high-throughput 
+applications. 
+For our housing recommendation use case, we want 
+to store our ratings and predictions somewhere. 
+This is a structured dataset of user ratings and 
+houses. It's built for a transactional workload, 
+writes and reads, and one database is enough for 
+a small dataset and hence we pick Cloud SQL.
+what's Cloud SQL? It's a Google-hosted and 
+managed relational database in the Cloud. Cloud 
+SQL supports two open-source databases: MySQL 
+and Postgres, and other database solutions. 
+12-
+Every application needs to store data. 
+13-
+A growing data organization will need lots of 
+compute power to run big data jobs. Compute 
+Engine lets you create and run virtual machines 
+on Google infrastructure. Your VM can run Linux 
+and Windows Server images provided by Google or 
+customized versions of these images, and you can 
+even import images for many of your physical 
+servers. When you create a VM, pick a machine 
+type which determines how much memory and how 
+many virtual CPUs it has. These types range 
+from very small to very large indeed. I will 
+show you to create a virtual machine like our 
+computers.
+14- 
+A growing data organization will need lots of 
+compute power to run big data jobs. Compute 
+Engine lets you create and run virtual machines 
+on Google infrastructure. Your VM can run Linux 
+and Windows Server images provided by Google or 
+customized versions of these images, and you can 
+even import images for many of your physical 
+servers. When you create a VM, pick a machine 
+type which determines how much memory and how 
+many virtual CPUs it has. These types range 
+from very small to very large indeed. I will 
+show you to create a virtual machine like our 
+computers.
+15- 
+You can choose what regions your GCP resources 
+are in. All the zones within a region have fast 
+network connectivity among them.
+You can choose your machine type according to 
+your need. You can choose strong machine like 
+4 CPU and  16 GB memory or less strong 2 CPU 
+and 4 GB.
+The bigger you choose, the more you pay. You 
+pay only for what they use or reserve as they 
+go. If you stop using resources, you stop paying. 
+16-
+you can want a company here with network services 
+if everyone in your company works at home. 
+17-
+Services of big data. I will tell you little 
+big data history and GCP services about it.
+18-
+Before 2006, big data meant big databases. 
+Database design came from a time when storage 
+was relatively cheap and processing was expensive. 
+So it made sense to copy the data from its 
+storage location to the processor to perform 
+data processing, and then the result would be 
+copied back to storage. Around 2006, distributed 
+processing 
+of big data became practical with Hadoop. 
+The idea behind Hadoop is to create a cluster of 
+computers and leveraged distributed processing,
+HDFS. The Hadoop Distributed File System, stored 
+the data on machines in the cluster, and 
+MapReduce provided distributed processing of this 
+data. Around 2010, BigQuery was released which 
+was the first of many big data services developed 
+by Google. Around 2015, Google launched Cloud 
+Dataproc which provides a managed service for 
+creating Hadoop and Spark clusters, and managing 
+data processing workloads.
+19-
+We needed to make sure that we could process 
+batch data and streaming data the same way. 
+For example, we needed houses details in our 
+scraping project. 
+Cloud dataproc help us transform from batch or 
+data to tables like we stored data to csv file 
+in our project. Cloud ML uses these tables for 
+ML engineers, once your dataset is in BigQuery, 
+you can easily call it from your IPython ML 
+notebooks in the cloud with just a few commands.
+20-
+You need data engineers to build the pipelines 
+and get you clean data.
+Decision makers, to decide how deep you want 
+to invest in a data-driven opportunity 
+while weighing the benefits for the organization.
+Analysts, to explore the data for insights 
+and potential relationships that could be 
+useful as features in a machine learning model. 
+Statisticians, to help make your data-inspired 
+decisions become true data-driven decisions, 
+with their added rigor.
+Applied machine learning engineers, who have 
+real-world experience building production 
+machine learning models from the latest and 
+best information and research by the researchers.
+Data scientists, who have the mastery over 
+analysis, statistics, and machine learning. 
+Analytics managers to lead the team.
+Social scientists and ethicists to ensure that 
+the quantitative impact is there for your 
+project and, it's the right thing to do. 
+As I've written in a blog post on this subject, 
+it's linked below, a single person might have 
+a combination of these roles, but this depends 
+on the size of your organization. Your team size 
+is one of the biggest drivers in whether you 
+should hire for a specific skill set, up-skill 
+from within, or combine the two. 
+21-
+22-
+BigQuery is designed to be an easy-to-use data 
+warehouse. BigQuery as both a data warehouse and 
+an Advanced Query Engine is foundational for 
+your AI and ML workloads. It's common for data 
+analysts, engineers, and data scientists to use 
+BigQuery to store, transform, and then feed 
+those large datasets directly into your ML 
+models. 
+23-
+24-
+Cloud Machine Learning Platform provides modern 
+machine learning services with pre-trained 
+models and a platform to generate your own 
+tailored models. TensorFlow is an open source 
+software library that's exceptionally well 
+suited for machine learning applications like 
+neural networks. You can run TensorFlow 
+wherever you like but GCP is an ideal place 
+for it because machine learning models need 
+lots of on-demand compute resources and lots 
+of training data.
+25-
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
