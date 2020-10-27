@@ -26,14 +26,22 @@ Notice that, in the first example, we are
 trying to predict a particular class label, 
 that is spam or not spam. 
 In the second example, there is no such label. 
-When there are labels present, we call it 
+When there are labels present and machine 
+learns from a dataset, we call it 
 supervised learning. When there are 
 no labels present, we call it unsupervised 
 learning.
+There are also reinforcement learning,
+in which software agents inteeract with 
+an environment according to rewards and 
+punishments.
 7- 
+Let's come back to supervised learning,
+which will be the focus of this presentation.
 In supervised learning, we have training 
 dataset, described variables or features 
-and a target variable.
+and a target variable. And Machine learns 
+from this dataset.
 8-
 Our dataset is commonly represented in a 
 table structure such as the one you see.
