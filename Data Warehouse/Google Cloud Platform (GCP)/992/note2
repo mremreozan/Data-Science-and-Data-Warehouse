@@ -67,15 +67,16 @@ we will build an automatic credit card approval
 predictor using machine learning techniques, 
 just like the real banks do.
 11-
-The probable features in a typical credit card 
-application are Gender, Age, Debt, Married, 
-Income, EducationLevel, YearsEmployed, etc, 
-and finally the the final variable is 
-ApprovalStatus.  Zero means rejected, 
-One means accepted.
+You see the columns like numbers but they
+represent The probable features in a typical 
+credit card application are Gender, Age, 
+Debt, Married, Income, EducationLevel, 
+YearsEmployed, etc, and finally the 
+the final variable is ApprovalStatus.  
+Zero means rejected, One means accepted.
 12-
 There are two new application and 
-we will find the approval result.
+we will predict the approval result.
 13-
 Machine learning, that’s it. We achieved 
 our goal. Here is exciting and the best 
