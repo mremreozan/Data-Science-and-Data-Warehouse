@@ -40,16 +40,17 @@ The setup is complete when the result of your list (ls) command output appears a
 
 ### Download Code Repository
 
-    Next you will download a code repository for use in this lab.
-
+6. Next you will download a code repository for use in this lab.
+```bash
 git clone https://github.com/GoogleCloudPlatform/training-data-analyst
+```
+### Identify a project
 
-Identify a project
+One environment variable that you will set is **$DEVSHELL_PROJECT_ID** that contains the Google Cloud project ID required to access billable resources.
 
-One environment variable that you will set is $DEVSHELL_PROJECT_ID that contains the Google Cloud project ID required to access billable resources.
+7. In the Console, on the Navigation menu, click Home. In the panel with Project Info, the Project ID is listed. You can also find this information in the Qwiklabs tab under Connection Details, where it is labeled GCP Project ID.
 
-    In the Console, on the Navigation menu ( 7a91d354499ac9f1.png), click Home. In the panel with Project Info, the Project ID is listed. You can also find this information in the Qwiklabs tab under Connection Details, where it is labeled GCP Project ID.
-
-    On the training-vm SSH terminal, set the DEVSHELL_PROJECT_ID environment variable and export it so it will be available to other shells. The following command obtains the active Project ID from the Google Cloud environment.
-
+8. On the training-vm SSH terminal, set the DEVSHELL_PROJECT_ID environment variable and export it so it will be available to other shells. The following command obtains the active Project ID from the Google Cloud environment.
+```bash
 export DEVSHELL_PROJECT_ID=$(gcloud config get-value project)
+```
