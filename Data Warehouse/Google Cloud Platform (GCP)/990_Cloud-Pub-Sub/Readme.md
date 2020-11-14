@@ -119,7 +119,7 @@ Leave this terminal open and the simulator running.
 ## Task 4: Verify that messages are received
 ### Open a second SSH terminal and connect to the training VM
 
-1. In the Console, on the Navigation menu ( 7a91d354499ac9f1.png), click Compute Engine > VM instances.
+1. In the Console, on the Navigation menu, click Compute Engine > VM instances.
 
 2. Locate the line with the instance called training-vm.
 
