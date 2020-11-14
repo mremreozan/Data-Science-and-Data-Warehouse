@@ -54,3 +54,41 @@ One environment variable that you will set is **$DEVSHELL_PROJECT_ID** that cont
 ```bash
 export DEVSHELL_PROJECT_ID=$(gcloud config get-value project)
 ```
+
+## Task 2: Create Pub/Sub topic and subscription
+
+ 1. On the training-vm SSH terminal, navigate to the directory for this lab.
+```bash
+cd ~/training-data-analyst/courses/streaming/publish
+```
+### Verify that the Pub/Sub service is accessible and working using the gcloud command.
+
+2. Create your topic and publish a simple message.
+```bash
+gcloud pubsub topics create sandiego
+```
+3. Publish a simple message.
+```bash
+gcloud pubsub topics publish sandiego --message "hello"
+```
+4. Create a subscription for the topic.
+```bash
+gcloud pubsub subscriptions create --topic sandiego mySub1
+```
+5. Pull the first message that was published to your topic.
+```bash
+gcloud pubsub subscriptions pull --auto-ack mySub1
+```
+Do you see any result? If not, why?
+
+6. Try to publish another message and then pull it using the subscription.
+```bash
+gcloud pubsub topics publish sandiego --message "hello again"
+gcloud pubsub subscriptions pull --auto-ack mySub1
+```
+Did you get any response this time?
+
+7. In the training-vm SSH terminal, cancel your subscription.
+```bash
+gcloud pubsub subscriptions delete mySub1
+```
