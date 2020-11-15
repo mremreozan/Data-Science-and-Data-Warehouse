@@ -100,9 +100,7 @@ A bucket should already exist that has the same name as the Project ID.
 
 6. Observe the following values:
 
-| Property | Value
-
-(type value or select option as specified) |
+| Property | Value (type value or select option as specified) |
 |---|---|
 | Name | <Same as the Project ID> |
 | Default storage class | Regional |
