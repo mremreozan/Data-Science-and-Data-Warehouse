@@ -1,53 +1,101 @@
 1-
-Today I will talk to you about supervised 
-learning, the most important branch of machine 
-learning.
-The purpose of this presentation is to 
-understand introduction to machine learning 
-with an example project.
-
+I am going to talk about Hadoop. Hadoop 
+is used in Data Science. The purpose of 
+this presentation is that it should at 
+least make sense to us and we will be 
+less confused when people talk about it. 
+Because, Understanding Hadoop is a highly 
+valuable skill for anyone working at 
+companies with large amounts of data.
 2-
-My presentation is divided into 2 parts.
+Hadoop is used for storing big data and 
+performing operations on data. Azure 
+HDInsight is a cloud distribution of Hadoop 
+components. Amazon Elastic MapReduce (EMR) 
+is an Amazon Web Services tool for big data 
+processing and analysis. Google Cloud 
+Dataproc, It can be used for big data 
+processing and machine learning. 
+And there are a lot of tools using hadoop 
+by integrating some another technology.
 3- 
-Basicly, machine learning is to give 
-computers the ability to learn to make 
-decisions from data
-4- 
-For example, your computer can learn 
-to predict whether an email is spam or 
-not spam given its content and sender.
+Hadoop is a synonym of Big data. Big Data 
+comprises of 3 V's or characteristics: 
+volume, velocity, and variety. Hadoop 
+framework plays a leading role in storing 
+and processing Big Data.
+4-
+Hadoop is an open source software platform 
+having distributed storage and distributed 
+processing of very large data sets on computer 
+clusters. The important components or concepts 
+in Hadoop is MapReduce, HDFS, and YARN. 
+It has many similarities with existing 
+distributed file systems. 
 5-
-Another example: your computer can learn 
-to cluster type of ball by distinguishing 
-them based on their color, size and other 
-characteristic
-6-
-Notice that, in the first example, we are 
-trying to predict a particular class label, 
-that is spam or not spam. 
-In the second example, there is no such label. 
-When there are labels present and machine 
-learns from a dataset, we call it 
-supervised learning. When there are 
-no labels present, we call it unsupervised 
-learning.
-There are also reinforcement learning,
-in which software agents inteeract with 
-an environment according to rewards and 
-punishments.
-7- 
-Let's come back to supervised learning,
-which will be the focus of this presentation.
-In supervised learning, we have training 
-dataset, described variables or features 
-and a target variable. And Machine learns 
-from this dataset.
+However, the differences from other 
+distributed file systems are significant. 
+1) HDFS is highly fault-tolerant and is 
+designed to be deployed on low-cost hardware. 
+2-3) HDFS provides high access to application 
+data and is suitable for applications that 
+have large data sets. 4) HDFS relaxes a few 
+POSIX requirements to enable streaming access 
+to file system data. 5) The assumption is that 
+it is often better to migrate the computation 
+closer to where the data is located rather 
+than moving the data to where the application 
+is running. 
+6- 
+First of all, let us understand why you need 
+it and what the alternative is. When you have 
+an useful 8 GB data. There are two options 
+to store it. The first one is to get a big 
+capacity node. This approach is called scale up, 
+or vertical scaling. Do you want to store 
+more data? Get yourself a better, bigger. 
+The second one is to store our data on a 
+collection of nodes. This approach called 
+Scale Out or horizontal Scale In. This is 
+the style of distributed file system.
+7-
+We only need to understand the main concepts 
+such as Namenode, Datanode, their role and 
+level of responsibility between them.
+HDFS has a master/slave architecture. 
+An HDFS cluster consists of a single NameNode. 
+Namenode is  a master server that manages 
+the file system namespace and regulates access 
+to files by clients. In addition, there are 
+a number of DataNodes, usually one per node 
+in the cluster, which manage storage attached 
+to the nodes that they run on. HDFS Client is 
+our command line interface like a terminal in 
+Linux. For example, if we want to transfer a 
+file from local to hdfs, we use HDFS CLient. 
+HDFS client requests a lease from a name node 
+to have an exclusive access to write or append 
+data to a file. The DataNodes are responsible 
+for serving read and write requests from the 
+file system’s clients. The DataNodes also 
+perform block creation, deletion, and replication 
+upon instruction from the NameNode. 
 8-
-Our dataset is commonly represented in a 
-table structure such as the one you see.
-The aim of supervised learning is to build 
-a model that is able to predict the target 
-variable.
+A key advantage of using Hadoop is its fault 
+tolerance. When data is sent to an individual 
+node, that data is also replicated to other 
+nodes in the cluster, which means that in the 
+event of failure, there is another copy available 
+for use. Let me introduce a few concepts.
+Block and replica. Replica is a physical data 
+storage on a data node. There are usually 
+several replicas with the same content on 
+different data nodes. Block is a meta-information 
+storage on a name node and provides information 
+about replica's locations and their states. 
+In case of HDFS client dies, replicas will 
+participate in a special recovery process called 
+a lease recovery.
 9-
 The goal is to learn from data for which 
 the right output is known, so that we can 
