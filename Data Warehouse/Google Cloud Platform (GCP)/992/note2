@@ -92,36 +92,38 @@ storage on a data node. There are usually
 several replicas with the same content on 
 different data nodes. Block is a meta-information 
 storage on a name node and provides information 
-about replica's locations and their states. 
+about replica s locations and their states. 
 In case of HDFS client dies, replicas will 
 participate in a special recovery process called 
 a lease recovery.
 9-
 You will be able to configure HDFS storage for 
 your own purposes. Think about the following 
-question, is it a big difference to have two terabyte 
-hard drive per node or two hard drives per node. 
-For instance, you have Samsung 940 Pro SSD with 
-disk read speed of three and a half gigabytes 
-per second. Let us evaluate how long it takes 
-to read 10 petabytes of data from a hard drive 
-with similar reading speed. Approximately, 
-you will see 35 days to read these data from one disk. 
-But if you have 2 drives, it is half of that, 17.5 days.
+question, is it a big difference to have two 
+terabyte hard drive per node or two hard drives 
+per node. For instance, you have Samsung 940 Pro 
+SSD with disk read speed of three and a half 
+gigabytes per second. Let us evaluate how long 
+it takes to read 10 petabytes of data from 
+a hard drive with similar reading speed. 
+Approximately, you will see 35 days to read 
+these data from one disk. But if you have 2 drives, 
+it is half of that, 17.5 days.
 10-
-Let’s us examine an example to understand map reduce. 
-There are three datasets which include all of texts 
-of the books in these library. For example First 
-dataset include all text of all books in the Royal 
-library of Belgium. We want to find the count of 
-“Champs-Élysées” word in the datasets. In mapreduce 
-with Hadoop, Firstly, we will find the count of 
-“Champs-Élysées” in each dataset in different servers. 
-And then we add up the results by reduce.  What's the 
-other way? Or what is before mapreduce of hadoop? 
-After combining of datasets, we can map it. But 
-if we want to count all words in all library of worlds. 
-We would need a big storage and big process capacity.
+Let’s us examine an example to understand map 
+reduce. There are three datasets which include all 
+of texts of the books in these library. For example 
+First dataset include all text of all books in the 
+Royal library of Belgium. We want to find the 
+count of “Champs-Élysées” word in the datasets. 
+In mapreduce with Hadoop, Firstly, we will find the 
+count of “Champs-Élysées” in each dataset in 
+different servers. And then we add up the results 
+by reduce. What s the other way? Or what is before 
+mapreduce of hadoop? After combining of datasets, 
+we can map it. But if we want to count all words
+in all library of worlds. We would need a big 
+storage and big process capacity.
 11-
 These are all the other systems around hadoop.
 12-
