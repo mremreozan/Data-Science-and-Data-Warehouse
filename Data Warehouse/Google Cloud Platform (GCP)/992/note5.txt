@@ -31,14 +31,15 @@ less new jobs than previous one.
 While the x axis shows the robot utilization 
 rate of these regions, the y axis shows the 
 employment. One of the Automation technologies 
-is robot technology. The effect of robot technology 
-on productivity is very positive. The companies 
-that use robot technology increase their turnover. 
-In this data, when we look at the regions of the 
-USA that use more robot technology, it is seen 
-that the employment in these areas is decreasing 
-rapidly. Total Labor Demand decreases as automation 
-increases.
+is robot technology. The effect of robot 
+technology on productivity is very positive. 
+The companies that use robot technology 
+increase their turnover. 
+In this data, when we look at the regions of 
+the USA that use more robot technology, it is 
+seen that the employment in these areas is 
+decreasing rapidly. Total Labor Demand 
+decreases as automation increases.
 
 5-
 AI is a new technology. And it has several 
@@ -46,15 +47,15 @@ directions. But especially the big companies
 in USA google, facebook, amazon etc. 
 They tend to use AI for automation. It is clear 
 that technologies have great benefits for human 
-beings, but how to use them. It must be determined 
-correctly. How to do this is very complex and 
-difficult to determine. We are not the people 
-who will change the decisions of companies, 
-I know this, but I think everyone working 
-in the IT sector should be aware benefits and risks. 
-I think that they are the ones who will understand 
-the effect of this situation correctly and can 
-tell the people around them.
+beings, but how to use them. It must be 
+determined correctly. How to do this is very 
+complex and difficult to determine. We are not 
+the people who will change the decisions of 
+companies, I know this, but I think everyone 
+working in the IT sector should be aware benefits 
+and risks. I think that they are the ones who
+will understand the effect of this situation 
+correctly and can tell the people around them.
 
 
 6-
